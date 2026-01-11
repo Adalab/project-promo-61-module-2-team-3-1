@@ -6,5 +6,7 @@
     bottom: 0;
     width: 100vw;
     padding: 1rem;
-    color: vars.$color-secondary;
+    color: white;
+    font-family: vars.$font-secondary;
+    background-color:vars.$color-primary-dark;
 }
