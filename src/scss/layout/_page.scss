@@ -1,1 +1,18 @@
 @use '../core/variables' as vars;
+<<<<<<< HEAD
+=======
+
+body {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    height: 100vh;
+    background-image: url("/images/background-marco-vegetal.jpg");
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+}
+
+>>>>>>> 23a755a45c1e4e26f70763d4a5d71f05865f6906

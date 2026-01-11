@@ -1,1 +1,15 @@
 @use '../core/variables' as vars;
+<<<<<<< HEAD
+=======
+
+.page__footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100vw;
+    padding: 1rem;
+    color: white;
+    font-family: vars.$font-secondary;
+    background-color:vars.$color-primary-dark;
+}
+>>>>>>> 23a755a45c1e4e26f70763d4a5d71f05865f6906
