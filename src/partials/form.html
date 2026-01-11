@@ -1,0 +1,51 @@
+<div class="form" method = "POST">
+    <div class="form_header">
+        <img src="images/form-icono.png" alt="form_icon">
+        <h1>Rellena</h1>
+    </div>
+
+    <div class="form_container">
+
+        <form class="form_container-sign" method = "POST">
+            <div class="form_container-sign-field">
+                <label for="firstName">Nombre y apellidos</label>
+                <input class="campo" type="text" name="firstName" data-id="form_container-result-name" placeholder="Introduce tu nombre y apellidos"/>
+            </div>
+
+              <div class="form_container-sign-field">
+                <label for="firstName">Propuesta</label>
+                <input class="campo" type="text" name="proposal" data-id="form_container-result-proposal" placeholder="¡Defiende tu plato!"/>
+            </div>
+
+              <div class="form_container-sign-field">
+                <label for="file">Foto plato</label>
+                <input class="campo" type="file" accept=".jpg, .jpeg, .png" name="selectImage" onchange="mostrarPrevisualizacion(event)" data-id="form_container-result-photo"/>
+            </div>
+            <div class="form_container-sign-field">
+                <label for="city">Ciudad</label>
+                <input class="campo" type="text" name="city" data-id="form_container-result-city" placeholder="¿De dónde vienes?"/>
+            </div>
+            <div class="form_container-sign-field">
+                <label for="phone">Teléfono</label>
+                <input class="campo" type="tel" name="phone" placeholder="123-456-789" data-id="form_container-result-phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+            </div>
+             <div class="form_container-sign-field">
+                <label for="email">Email</label>
+                <input  class="campo" type="email" name="email" data-id="form_container-result-mail" placeholder="Introduce tu email"/>
+            </div>
+        </form>
+
+        <ul id="form_container-result">
+            <h3>¿TE GUSTA COCINAR?</h3>
+        <div class="form_container-result-list">
+            <li id="form_container-result-name"></li>
+            <li id="form_container-result-proposal"></li>
+            <li id="form_container-result-photo"></li>
+            <li id="form_container-result-city"></li>
+            <li id="form_container-result-phone"></li>
+            <li id="form_container-result-mail"></li>
+        </div>
+        </ul>
+
+    </div>
+</div>
