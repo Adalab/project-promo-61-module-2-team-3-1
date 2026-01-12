@@ -1,9 +1,8 @@
-console.log('>> Ready form:)');
+console.log('>> Ready :)');
 
 const inputs = document.querySelectorAll(".campo");
 const parrafo = document.getElementById("form_container-result");
 const form = document.querySelector(".form_container-sign");
-
 
 
 inputs.forEach(input => {
@@ -16,6 +15,8 @@ function manejarInput(event) {
   campoResultado.textContent = input.value;
   
 }
+
+
 
 //Guardar datos en Local Storage
 
