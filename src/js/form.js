@@ -44,3 +44,12 @@ form.addEventListener('input', () => {
 
   localStorage.setItem('formData', JSON.stringify(formData));
 });
+
+
+
+const panel = document.querySelector(".panel");
+const header = panel.querySelector(".panel-header");
+
+header.addEventListener("click", () => {
+  panel.classList.toggle("open");
+});
