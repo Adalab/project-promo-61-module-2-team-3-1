@@ -2,6 +2,7 @@
 
 .logo{
   width: 600px;
+  display: flex;
   
 }
 h1{
@@ -9,6 +10,7 @@ h1{
   font-weight: 400;
   font-size: 3.5rem;
   color: vars.$color-secondary;
+  margin: 0;
   
 }
 h3 {
@@ -22,7 +24,7 @@ h3 {
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 1.5rem;
+  flex: 1;
  
   .page__main--text {
     display: flex;
@@ -30,26 +32,14 @@ h3 {
     justify-content: center;
     text-align: center;
     align-items: center;
+    padding: 0;
     
-    @media screen and (max-width: 736px) {
-    margin-left: 5rem;
-    margin-right: 5rem;
-    }
   }  
   .container {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    
     justify-content: center;
-    gap: 3rem;
-     /* Tablet */
-    @media screen and (max-width: 736px) {
-    gap: 0rem;
-    width: 70%;
-
-    }
-    
-   
+  
   }
  
 }
@@ -86,6 +76,26 @@ h3 {
     }
   
   
-  
+  // media queries
+  @media screen and (max-width: 480px) {
+    .logo {
+      width: 450px;
+
+    }
+    .page__main {
+      justify-content: flex-start;
+    }
+    .mockups {
+      padding: 0;
+      margin: 0;
+    }
+    h1, h3 {
+      margin-left: 1rem;
+      margin-right: 1rem;
+    }
+    h3 {
+      font-size: 1.2rem;
+    }
+    }
   
  
