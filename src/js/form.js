@@ -63,15 +63,3 @@ form.addEventListener('input', () => {
 });
 
 
-//arrow//
-const panel = document.querySelector(".panel");
-
-  if (panel) {
-    const header = panel.querySelector(".panel-header");
-
-    if (header) {
-      header.addEventListener("click", () => {
-        panel.classList.toggle("open");
-      });
-    }
-  }
