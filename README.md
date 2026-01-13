@@ -1,125 +1,90 @@
-![Adalab](https://beta.adalab.es/resources/images/adalab-logo-155x61-bg-white.png)
+Proyecto Modulo 2 JavaScript Team 3- Yiyi, Soraya y Carmen
 
-# Adalab web starter kit
+En este proyecto, desarrollaremos una aplicación web para poder participar en un concurso de cocina. El objetivo principal es permitir la creación de nuevos elementos, así como la consulta y renderización de los elementos ya creados en la web.
 
-Ahoy! Este es nuestro Starter Kit creado en **node y vite**. ¿Y qué es un Starter kit? Pues es una **plantilla de proyecto con funcionalidades preinstaladas y preconfiguradas**.
 
-Este Kit incluye un motor de plantillas HTML, el preprocesador SASS y un servidor local y muchas cosas más. El Kit nos ayuda a trabajar más cómodamente, nos automatiza tareas.
+ESPECIFICACIONES
 
-En el Kit hay 3 tipos de ficheros y carpetas:
+En el desarrollo de esta aplicación web usaremos las siguientes tecnologías:
+•	Uso avanzado de formularios HTML
+•	Maquetación usando CSS avanzado, como flex y grid.
+•	Uso de mediaqueries para que el diseño sea adaptable al dispositivo usando la
+   estrategia mobile first.
+•	Gestión de eventos en el navegador (al hacer click, pasa x, etc.)
+•	Acceso y envío de datos a un servidor.
+•	Almacenamiento en local usando LocalStorage.
+•	Uso de git para el control de versiones del proyecto.
+•	Publicación del resultado en Internet usando GitHub Pages.
 
-- Los ficheros que están sueltos en la raíz del repositorio, como vite.config.js, package.json... Son la configuración del proyecto y no necesitamos modificarlos (excepto este README.md, para describir tu proyecto).
-- La carpeta `src/`: son los ficheros de nuestra página web, como HTML, CSS, JS...
-- La carpeta `public/`, que tiene fichero estáticos como imágenes, fuentes, favicon, librerías de JavaScript antiguas (jQuery, ...)
-- Y la carpeta `docs/`, que es generada automáticamente cuando arrancamos el proyecto. El Kit lee los ficheros que hay dentro de `src/` y `public/`, los procesa y los genera dentro de `public/` y `docs/`.
 
-## Guía de inicio rápido
+EL PROYECTO CONSTA DE 3 PÁGINAS
 
-> **NOTA:** Necesitas tener instalado [Node JS](https://nodejs.org/) con una versión superior a la 14 para trabajar con este Starter Kit:
+1.	Una página landing de bienvenida. Con botón a la página del formulario
 
-### Pasos a seguir cada vez que queremos arrancar un proyecto desde cero:
+2.	Una página formulario para la recopilación de datos y con su vista previa. 
 
-1. **Crea tu propio repositorio.**
-1. Descarga este **Starter kit desde GitHub**.
-   - No recomendamos que clones este repo ya que no podrás añadir commits.
-1. **Copia todos los ficheros** de este Starter kit en la carpeta raíz de tu repositorio.
-   - Recuerda que debes copiar **también los ficheros ocultos** que comienzan por un punto.
-   - Si has decidido clonar este repo, no debes copiar la carpeta `.git`. Si lo haces estarás machacando tu propio repositorio.
-1. **Abre una terminal** en la carpeta raíz de tu repositorio.
-1. **Instala las dependencias** locales ejecutando en la terminal el comando:
+   •	Debe contener al menos seis campos de entrada (obligatorios una foto y campo numérico tipo field1 con nº diferente a 0). 
+   •	Los campos del formulario deberán tener restricciones para su formato específico. 
+   (Por ejemplo, un campo de tipo tel para el número móvil, un campo de tipo email para el correo electrónico y cualquier otro campo necesario con su formato correspondiente).
+   •	Las modificaciones realizadas en el formulario (diseño y contenido) aparecerán automáticamente en una vista previa.
+   •	Debe haber una sección colapsable, lo que significa que, mediante el uso de eventos, la sección puede ocultarse o mostrarse según lo desee la usuaria.
+   •	Toda la información del formulario debe almacenarse en LocalStorage (almacenamiento   local del navegador) de manera que, al recargar la página, los datos sigan disponibles.
+   •	Además, debe haber un botón de reset para borrar esta información. Para esto, definiremos una estructura de datos compleja (con arrays y objetos) que se guardará en el navegador.
 
-```bash
-npm install
-```
+3.	Una página que muestra la tarjeta creada por la usuaria. Cuando la usuaria envíe el
+   formulario, mostraremos una url que será esta página, donde la usuaria puede 
+   visualizar la tarjeta con los datos introducidos en el formulario.
 
-### Pasos para arrancar el proyecto:
+   Compartir en Twitter seguiremos 2 pasos:
+   •	Al hacer clic en el botón de "Enviar", el formulario se enviará (submit) a una API que devolverá los datos del elemento creado correctamente.
 
-Una vez hemos instalado las dependencias, vamos a arrancar el proyecto. **El proyecto hay que arrancarlo cada vez que te pongas a programar.** Para ello ejecuta el comando:
+   •	Se debe maquetar una página que muestre los datos del elemento creado previamente. Esta página debe contener un botón de "Compartir" que enlazará a Twitter, donde habrá un tweet con texto predefinido que incluirá la URL del nuevo elemento.
 
-```bash
-npm run dev
-```
 
-Este comando:
 
-- **Abre una ventana de Chrome y muestra tu página web**, al igual que hace el plugin de VS Code Live Server (Go live).
-- También **observa** todos los ficheros que hay dentro de la carpeta `src/`, para que cada vez que modifiques un fichero **refresca tu página en Chrome**.
-- También **procesa los ficheros** HTML, SASS / CSS y JS. Por ejemplo:
-   - Convierte los ficheros SASS en CSS.
-   - Combina los diferentes ficheros de HTML y los agrupa en uno o varios ficheros HTML.
+HISTORIAS DE USUARIO
 
-Después de ejecutar `npm run dev` ya puedes empezar a editar todos los ficheros que están dentro de la carpeta `src/` y programar cómodamente.
+   Primera. Landing y UI de la herramienta.
+   -	Desarrollar la página de landing.
+   -	Desarrollar una primera versión básica de la página del formulario y la tarjeta
+      de previsualización, con la maquetación de la estructura básica (para desktop y
+      móvil). 
+   - Incluye el formulario con los colapsables y la vista previa
+   -	Desarrollar la página de la vista de la tarjeta.
 
-### Pasos para publicar el proyecto en GitHub Pages:
+   Segunda. Versión interactiva.
+   -	Formulario interactivo: al modificar un campo del formulario, se actualiza la
+      vista previa (excepto la foto).
+   -	Realizar validaciones de datos del formulario: campos obligatorios, email, etc.
 
-Para generar tu página para producción ejecuta el comando:
+   Tercera. Compartir.
+   -	Actualización de la foto en la vista previa de la tarjeta, usando el componente
+      proporcionado.
+   -	Añadir la funcionalidad de crear la tarjeta, enviando primero los datos al
+      servidor (POST).
+   -	Añadir la funcionalidad de compartir en Twitter.
+   -	Mostrar la tarjeta creada con la información previamente guardada en el servidor
+      (GET).
 
-```bash
-npm run build
-```
+   Cuarta. Versión offline.
+      Hacer que el contenido se almacene en LocalStorage del navegador.
 
-Y a continuación:
 
-1. Sube a tu repo la carpeta `docs/` que se te acaba de generar.
-1. Entra en la pestaña `settings` de tu repo.
-1. Y en el apartado de GitHub Pages activa la opción **master branch /docs folder**.
-1. Y ya estaría!!!
 
-Además, los comandos:
+ENTREGA
+   1. El formato de entrega de este proyecto será mediante la subida de este a la
+      plataforma de GitHub. Para subirlo, se creará un repositorio en tu perfil.  username/project-promo-u-module-2-team-3.
+   2. De manera adicional, se deberá activar "GitHub Pages"
 
-```bash
-npm run push-docs
-```
-o
 
-```bash
-npm run deploy
-```
 
-son un atajo que nos genera la versión de producción y hace push de la carpeta `docs/` del tirón. Te recomendamos ver el fichero `package.json` para aprender cómo funciona.
-<!--
-## Flujo de archivos con Gulp
+API del back-end
 
-Estas tareas de Gulp producen el siguiente flujo de archivos:
+La URL base del servicio es https://dev.adalab.es/
+El API sigue una convención tipo REST para la gestión de datos: creación y acceso a los mismos. Las acciones implementadas por este API son las siguientes:
+•	CREATE: una petición 'POST' a la URL /api/info/data con los datos necesarios en
+   formato JSON (especificados más abajo) creará una nueva tarjeta.
+•	GET: una petición 'GET' a la URL /api/info/:uuid devuelve los datos del elemento
+   creado para que puedan hacer su maquetación
 
-![Gulp flow](./gulp-flow.png)
-
-## `gulpfile.js` y `config.json`
-
-Nuestro **gulpfile.js** usa el fichero `config.json` de configuración con las rutas de los archivos a generar / observar.
-
-De esta manera separarmos las acciones que están en `gulpfile.js` de la configuración de las acciones que están en `config.json`.
--->
-## Estructura de carpetas
-
-La estructura de carpetas tiene esta pinta:
-
-```
-src
- ├─ api // los ficheros de esta carpeta se copian en public/api/
- |  └─ data.json
- ├─ images
- |  └─ logo.jpg
- ├─ js // los ficheros de esta carpeta se concatenan en el fichero main.js y este se guarda en public/main.js
- |  ├─ main.js
- |  └─ events.js
- ├─ scss
- |  ├─ components
- |  ├─ core
- |  ├─ layout
- |  └─ pages
- └─ html
-    └─ partials
-```
-
-> **NOTA:** Los partials de HTML y SASS del proyecto son orientativos. Te recomendamos usar los que quieras, y borrar los que no uses.
-<!--
-## Vídeotutoriales del Starter kit
-
-- [Qué es, trabajar con la versión de desarrollo y rutas relativas](https://www.youtube.com/watch?v=XwvhXvBijos)
-- [Migración de un proyecto, trabajar con la versión de producción y GitHub Pages](https://www.youtube.com/watch?v=qqGClcgt9Uc)
-- [Motor de plantillas](https://www.youtube.com/watch?v=4GwXOJ045Zg)
--->
-## Falta algo?
-
-Echas de menos que el kit haga algo en concreto? Pidelo sin problema a través de las issues o si te animas a mejorarlo mándanos un PR :)
+En el proyecto 2 de Adalab vamos a usar el servicio para crear un nuevo registro (POST) y el servicio para acceder a un registro (GET).
