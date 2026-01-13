@@ -20,4 +20,15 @@ selectCheckbox.addEventListener("change", (e) => {
 
 //boton reset
 
-const buttonReset = document.querySelector('.campo')
+const buttonReset = document.getElementById('button_reset');
+const resetInputValue = document.querySelectorAll('.campo');
+
+buttonReset.addEventListener("click", () => {
+    console.log('reset');
+
+    resetInputValue.forEach(input => {
+        input.value = '';
+    });
+ });
+
+    
