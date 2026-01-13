@@ -20,17 +20,12 @@ function manejarInput(event) {
 const inputImage = document.querySelector('input[name="selectImage"]');
 const imgResult = document.getElementById('form_container-result-photo');
 
-<<<<<<< HEAD
 inputImage.addEventListener('change', function () {
   const file = this.files[0];
   if (file) {
     imgResult.src = URL.createObjectURL(file);
   }
 });
-=======
-
-
->>>>>>> 35fb7beea731e240af79e1177e51a094f6b88d85
 
 //Guardar datos en Local Storage
 
