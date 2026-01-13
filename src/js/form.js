@@ -14,9 +14,18 @@ function manejarInput(event) {
   const campoResultado = document.getElementById(input.dataset.id);
   campoResultado.textContent = input.value;
   
+
 }
+//para la imagen
+const inputImage = document.querySelector('input[name="selectImage"]');
+const imgResult = document.getElementById('form_container-result-photo');
 
-
+inputImage.addEventListener('change', function () {
+  const file = this.files[0];
+  if (file) {
+    imgResult.src = URL.createObjectURL(file);
+  }
+});
 
 //Guardar datos en Local Storage
 
