@@ -1,9 +1,8 @@
-console.log('>> Ready form:)');
+console.log('>> Ready :)');
 
 const inputs = document.querySelectorAll(".campo");
 const parrafo = document.getElementById("form_container-result");
 const form = document.querySelector(".form_container-sign");
-
 
 
 inputs.forEach(input => {
@@ -16,6 +15,13 @@ function manejarInput(event) {
   campoResultado.textContent = input.value;
   
 }
+
+//Mostrar imagen 
+document.getElementById('image').onchange = function () {
+    preview.src = URL.createObjectURL(this.files[0]);
+    preview.style.display = 'block';
+};
+
 
 //Guardar datos en Local Storage
 
@@ -46,7 +52,7 @@ form.addEventListener('input', () => {
 });
 
 
-
+//arrow//
 const panel = document.querySelector(".panel");
 const header = panel.querySelector(".panel-header");
 
