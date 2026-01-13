@@ -1,0 +1,43 @@
+@use '../core/variables' as vars;
+
+.form-checkbox {
+    display: flex;
+    flex-direction: column;
+    margin: 4rem;
+    .form-checkbox_labels {
+        margin-left: 5rem;
+    }
+    .form-checkbox_titleAndIcon {
+        display: flex;
+        flex-direction: row;
+        gap: 1rem;
+        align-items: center;
+
+        .form-checkbox_title {
+        color: vars.$color-secondary;
+    }
+    }
+    
+}
+
+
+label {
+    font-family: vars.$font-secondary;
+}
+
+//color del checkbox
+input[type="radio"] {
+  accent-color: vars.$color-primary-dark;
+  } 
+.background1 {
+    width: 500px;
+    
+}
+
+.form-checkbox_container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 2rem;
+}
+
