@@ -1,6 +1,6 @@
 console.log('>> Ready :)');
 
-const inputs = document.querySelectorAll("input[data-id]");
+const inputs = document.querySelectorAll(".campo");
 const parrafo = document.getElementById("form_container-result");
 const form = document.querySelector(".form_container-sign");
 
@@ -12,14 +12,10 @@ input.addEventListener('input', manejarInput);
 function manejarInput(event) {
   const input = event.currentTarget;
   const campoResultado = document.getElementById(input.dataset.id);
+  campoResultado.textContent = input.value;
   
-    if (campoResultado) {
-    campoResultado.textContent = input.value;
-  }
-
 }
 
-//Mostrar imagen 
 
 
 //Guardar datos en Local Storage
