@@ -18,3 +18,6 @@ selectCheckbox.addEventListener("change", (e) => {
     }   
 })
 
+//boton reset
+
+const buttonReset = document.querySelector('.campo')
