@@ -4,55 +4,61 @@
                 <h3 class="form-checkbox_title">Rellena tus datos</h3>
     </div>
 
-    <div class="form" method = "POST">
+    <div class="form">
 
         <div class="form_container">
 
             <form class="form_container-sign" method = "POST">
                 <div class="form_container-sign-field">
                     <label for="firstName" >Nombre y apellidos</label>
-                    <input class="campo" type="text" name="firstName" data-id="form_container-result-name" placeholder="Introduce tu nombre y apellidos"/>
+                    <input id="firstName" class="campo" type="text" name="firstName" data-id="form_container-result-name" placeholder="¡Preséntate!"/>
                 </div>
 
                 <div class="form_container-sign-field">
-                    <label for="firstName" >Propuesta</label>
-                    <input class="campo" type="text" name="proposal" data-id="form_container-result-proposal" placeholder="¡Defiende tu plato!"/>
+                    <label for="proposal" >Propuesta</label>
+                    <input id="proposal" class="campo" type="text" name="proposal" data-id="form_container-result-proposal" placeholder="¡Defiende tu plato!"/>
                 </div>
 
                 <div class="form_container-sign-field">
                     <label for="file" >Foto plato</label>
-                    <input class="campo" type="file" accept="image/*" name="selectImage" data-id="form_container-result-photo"/>
+                    <input id="file" class="campo" type="file" accept="image/*" name="selectImage" data-id="form_container-result-photo"/>
                 </div>
+
                 <div class="form_container-sign-field">
                     <label for="city" >Ciudad</label>
-                    <input class="campo" type="text" name="city" data-id="form_container-result-city" placeholder="¿De dónde vienes?"/>
+                    <input id="city" class="campo" type="text" name="city" data-id="form_container-result-city" placeholder="¿De dónde vienes?"/>
                 </div>
+
                 <div class="form_container-sign-field">
                     <label for="phone">Teléfono</label>
-                    <input class="campo" type="number" name="phone" placeholder="123-456-789" data-id="form_container-result-phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
+                    <input id="phone" class="campo" type="tel" name="phone" placeholder="123-456-789" data-id="form_container-result-phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required><br><br>
                 </div>
+
                 <div class="form_container-sign-field">
                     <label for="email">Email</label>
-                    <input  class="campo" type="email" name="email" data-id="form_container-result-mail" placeholder="ejemplo@correo.com"/>
+                    <input id="email" class="campo" type="email" name="email" data-id="form_container-result-mail" placeholder="ejemplo@correo.com"/>
                 </div>
+
+                <button type="submit" class="card_button">¡APÚNTATE!</button>
             </form>
-
-            
-
         </div>
     </div>
+
+            
 </div>
+
+
 <div class="panel">
 
-  <div class="panel-header">
-    <div class="title">
-      <img src="images/003-bandeja.png" class="panel-icon" alt="icono comparte">
-      <span>Comparte</span>
-      <span class="arrow"></span>
+    <div class="panel-header">
+        <div class="title">
+        <img src="/images/003-bandeja.png" class="panel-icon" alt="icono comparte">
+        <span>Comparte</span>
+        <span class="arrow"></span>
+        </div>
     </div>
-  </div>
 
-  <div class="panel-content">
-    <button class="card_button">¡APÚNTATE!</button>
-  </div>
+    <div class="panel-content">
+        <button class="card_button">¡APÚNTATE!</button>
+    </div>
 </div>
