@@ -33,7 +33,7 @@ input[type="radio"] {
     
 }
 
-.form-checkbox_container {
+.page_form-checkbox {
     display: flex;
     flex-direction: row;
     
@@ -42,8 +42,19 @@ input[type="radio"] {
 
 .page_form-index {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     padding: 3rem;
     margin-left: 20rem;
     
+   
+    
 }
+.form-index_container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 40rem;
+    
+}
+
+
