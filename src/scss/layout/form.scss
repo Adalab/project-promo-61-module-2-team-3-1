@@ -59,22 +59,7 @@
     background-color: #FAEBD7;
 }
 
-.form_container-result-content {
-    width: 19rem;
-    height: 25rem;
-    margin-top: 1rem;
-    display: flex;
-    flex-direction: row;
-    
-}
 
-#form_container-result h3 {
-    color: vars.$color-secondary;
-    font-family: vars.$font-main;
-    text-align: center;
-    
-   
-}
 
 .form_container-result-list {
     margin-right: 4rem;
@@ -84,28 +69,16 @@
 .form_container-result-list li {
     list-style-type: none;
     line-height: 2rem;
-     
-    
-    
+       
 }
-
-#form_container-result-photo {
-   
-}
-
-
 
 .form_container-result li {
-    margin-top: 3rem;
+    
     color: black;
     text-align: center;
     margin-bottom: 2rem;
     font-weight: bold;
      
-}
-
-.form_container-result-list-image {
-
 }
 
 input::placeholder {
@@ -124,10 +97,7 @@ input::placeholder {
         
     }
 
-   #form_container-result {
-    list-style-type: none;
-  
-   }
+   
     
 }
 
@@ -146,12 +116,7 @@ input::placeholder {
         
     }
 
-    #form_container-result {
-        height: 10rem;
-        width: 30rem;
-        height: auto;
-        margin: 2rem;
-    }
+   
 }
 
 /* PANEL */
