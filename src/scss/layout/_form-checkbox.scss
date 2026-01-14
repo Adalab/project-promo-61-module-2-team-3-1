@@ -28,39 +28,11 @@ label {
 input[type="radio"] {
   accent-color: vars.$color-primary-dark;
   } 
-.background1 {
-    width: 500px;
-    
-}
+
 
 .page_form-checkbox {
     display: flex;
     flex-direction: row;
     
     
-}
-
-.page_form-index {
-    display: flex;
-    flex-direction: row;
-    padding: 3rem;
-    margin-left: 20rem;
-    
-   
-    
-}
-.form-index_container {
-    display: flex;
-    flex-direction: column;
-    gap: 3rem;
-    width: 40rem;
-    
-}
-
-.absolute {
-    position: absolute;
-}
-
-.card-preview {
-    position: relative;
 }

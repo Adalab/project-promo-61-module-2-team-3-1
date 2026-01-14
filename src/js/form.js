@@ -15,6 +15,7 @@ function manejarInput(event) {
   const campoResultado = document.getElementById(input.dataset.id);
   campoResultado.textContent = input.value;
   
+  
 
 }
 //para la imagen

@@ -22,12 +22,14 @@ selectCheckbox.addEventListener("change", (e) => {
 
 const buttonReset = document.getElementById('button_reset');
 const resetInputValue = document.querySelectorAll('.campo');
+const containerToBlur = document.querySelectorAll('.container-blur');
 
 buttonReset.addEventListener("click", () => {
     console.log('reset');
 
     resetInputValue.forEach(input => {
         input.value = '';
+        
     });
  });
 

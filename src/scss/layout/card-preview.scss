@@ -1,0 +1,56 @@
+@use '../core/variables' as vars;
+
+.page_form-index {
+    display: flex;
+    flex-direction: row;
+    padding: 3rem;
+    margin-left: 20rem;
+
+}
+.form-index_container {
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    width: 40rem;
+    
+}
+
+.absolute {
+    position: absolute;
+}
+
+.card-preview {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.background1 {
+    width: 600px;
+    
+}
+
+.button-style--reset {
+    width: 180px;
+    height: 50px;
+    background-color: vars.$color-primary-dark;
+    color: vars.$color-primary;
+     &:hover {
+        width: 180px;
+        height: 50px;
+        background-color: vars.$color-primary;
+        color:vars.$color-primary-dark; ;
+    }
+}
+
+
+.page_card-preview {
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+    gap: 1rem
+   }
+
+.blur {
+   filter: blur(5px);
+}
