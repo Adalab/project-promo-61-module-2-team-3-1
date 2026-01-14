@@ -4,8 +4,7 @@
 .form {
     display: flex;
     align-items: center;
-    margin: 0;
-    pad: 0;
+    
     margin-left: 5rem;
 }
 
@@ -29,23 +28,21 @@
 .form_container {
     display: flex;
     flex-direction: column;
-
-
     justify-content:center;
-    margin-right: 4rem;
     width: 4rem;
-    margin: 5rem;
+    margin-left: 5rem;
     
 }
 
 .form_container-sign {
-    margin-left: 10rem;
+    margin-left: 15rem;
 }
 
 .form_container-sign-field {
     display: flex;
     flex-direction: column;
-    gap: 0.2rem;
+    width: 480px;
+    gap: 0.5rem;
 }
 
 .form_container-sign-field label {
@@ -65,15 +62,9 @@
 .form_container-result-content {
     width: 19rem;
     height: 25rem;
-    
-    
     margin-top: 1rem;
     display: flex;
     flex-direction: row;
-    
- 
-    
-
     
 }
 
@@ -81,12 +72,8 @@
     color: vars.$color-secondary;
     font-family: vars.$font-main;
     text-align: center;
-    margin-top: -1.5rem;
-    padding: 1rem;
+    
    
-    
-
-    
 }
 
 .form_container-result-list {
@@ -97,13 +84,13 @@
 .form_container-result-list li {
     list-style-type: none;
     line-height: 2rem;
-     width: 10rem;
-     margin-right: 9rem;
+     
+    
     
 }
 
 #form_container-result-photo {
-    margin-left: -14rem;
+   
 }
 
 
@@ -114,12 +101,7 @@
     text-align: center;
     margin-bottom: 2rem;
     font-weight: bold;
-  
-   
-   
-    
-    
-    
+     
 }
 
 .form_container-result-list-image {
@@ -139,7 +121,7 @@ input::placeholder {
     }
 
     .form_container-sign-field {
-        flex-direction: row;
+        
     }
 
    #form_container-result {
