@@ -1,6 +1,7 @@
-const panel = document.querySelector(".panel");
-const header = document.querySelector(".panel-header");
+document.addEventListener("click", function (ev) {
+  const header = ev.target.closest(".panel-header");
+  if (!header) return;
 
-header.addEventListener("click", () => {
+  const panel = header.closest(".panel");
   panel.classList.toggle("open");
 });
