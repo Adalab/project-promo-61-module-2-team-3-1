@@ -29,6 +29,13 @@ inputImage.addEventListener('change', function () {
   }
 });
 
+//Mostrar imagen 
+document.getElementById('image').onchange = function () {
+    preview.src = URL.createObjectURL(this.files[0]);
+    preview.style.display = 'block';
+};
+
+
 //Guardar datos en Local Storage
 
 function loadLocalStorage() {
@@ -58,10 +65,3 @@ form.addEventListener('input', () => {
 });
 
 
-//arrow//
-const panel = document.querySelector(".panel");
-const header = panel.querySelector(".panel-header");
-
-header.addEventListener("click", () => {
-  panel.classList.toggle("open");
-});

@@ -1,0 +1,45 @@
+@use '../core/variables' as vars;
+
+/* CONTENIDO DESPLEGABLE */
+.panel-content {
+  overflow: hidden;
+  max-height: 0;
+  opacity: 0;
+  padding: 0 1rem;
+  transition: max-height 0.4s ease, opacity 0.3s ease, padding 0.3s ease;
+}
+
+.panel.open .panel-content {
+  max-height: 200px;
+  opacity: 1;
+  padding: 1.5rem 1rem;
+}
+
+/* BOTÓN */
+.card_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: vars.$color-primary;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: vars.$font-secondary;
+  width: 140px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.50s ease;
+}
+
+.card_button:hover {
+  background-color: vars.$color-secondary-dark;
+  color: white;
+  width: 155px;
+  height: 54px;
+}
+
+
+
+
