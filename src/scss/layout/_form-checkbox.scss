@@ -3,11 +3,13 @@
 .form-checkbox {
     display: flex;
     flex-direction: column;
-    margin: 4rem;
+    
     .form-checkbox_labels {
         margin-left: 5rem;
     }
-    .form-checkbox_titleAndIcon {
+    
+}
+.form-checkbox_titleAndIcon {
         display: flex;
         flex-direction: row;
         gap: 1rem;
@@ -18,9 +20,6 @@
     }
     }
     
-}
-
-
 label {
     font-family: vars.$font-secondary;
 }
@@ -29,15 +28,11 @@ label {
 input[type="radio"] {
   accent-color: vars.$color-primary-dark;
   } 
-.background1 {
-    width: 500px;
-    
-}
 
-.form-checkbox_container {
+
+.page_form-checkbox {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    padding: 2rem;
+    
+    
 }
-
