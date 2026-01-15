@@ -13,19 +13,23 @@
     gap: 3rem;
     width: 40rem;  
 }
-#form_container-result {
 
-}
 #form_container-result h3 {
-    color: vars.$color-secondary;
+    color: vars.$color-primary-dark;
     font-family: vars.$font-main;
     text-align: center;
+    letter-spacing: 0.05em;
+    text-shadow:
+    -1px -1px 0 #ffffff,
+     1px -1px 0 #ffffff,
+    -1px  1px 0 #fffefe,
+     1px  1px 0 #ffffff;
+
     
 }
 .card-preview {
     position: relative;
     display: flex;
-    
     align-items: center;
     justify-content: center;
     
@@ -34,8 +38,18 @@
 .form_container-result-preview {
     display: flex;
     position: relative;
+    
+    padding: 0.5rem;
   
 }
+.form_container-result-list {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0.5rem;
+}
+
 .absolute {
     position: absolute;
     top: 23%;
@@ -70,4 +84,22 @@
 
 .blur {
    filter: blur(5px);
+   
+}
+
+.style-preview {
+    color: black;
+    font-family: vars.$font-secondary;
+    font-size: 1.2rem;
+    letter-spacing: 0.05em;
+    font-weight: 600;
+    
+    
+   
+
+}
+
+.style-preview-photo {
+    border: 8px solid #e0ff78;
+    
 }
