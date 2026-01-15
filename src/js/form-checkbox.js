@@ -37,4 +37,11 @@ buttonReset.addEventListener("click", () => {
 
 //abrir flecha
 
+const formCheckbox = document.querySelector(".form-checkbox");
+const headerpageFormCheckbox = document.querySelector(".form-checkbox_titleAndIcon");
+
+headerpageFormCheckbox.addEventListener("click", () => {
+    console.log('holi');
+    pageFormCheckbox.classList.toggle("open");
+});
 
