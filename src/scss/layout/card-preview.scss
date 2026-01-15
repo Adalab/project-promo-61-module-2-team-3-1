@@ -35,13 +35,19 @@
     
 ;
 }
-.form_container-result-preview {
+.form_container-result-preview  {
     display: flex;
     position: relative;
-    
+    border: none;
+    outline: none;
+    background: transparent;
     padding: 0.5rem;
-  
 }
+.form_container-result-preview::before,
+.form_container-result-preview::after {
+  content: none;
+}
+
 .form_container-result-list {
     position: relative;
     display: flex;
@@ -52,7 +58,7 @@
 
 .absolute {
     position: absolute;
-    top: 23%;
+    top: 20%;
     
 }
 
@@ -93,8 +99,11 @@
     font-size: 1.2rem;
     letter-spacing: 0.05em;
     font-weight: 600;
-    
-    
+    text-shadow:
+        -1px -1px 1px rgba(255,255,255,0.7),
+        1px -1px 1px rgba(255,255,255,0.7),
+        -1px  1px 1px rgba(255,255,255,0.7),
+        1px  1px 1px rgba(255,255,255,0.7);
    
 
 }
@@ -103,3 +112,18 @@
     border: 8px solid #e0ff78;
     
 }
+
+.liPhoto{
+    
+    width: 180px;       
+    height: 240px;
+    overflow: hidden;
+    
+    #form_container-result-photo {
+        width: 100%;       
+        height: 100%;
+        object-fit: cover;
+    }
+}
+
+

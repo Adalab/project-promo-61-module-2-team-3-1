@@ -10,14 +10,13 @@ const checkOption3 = document.getElementById('input-option3');
 
 selectCheckbox.addEventListener("change", (e) => {
     if (checkOption1.checked) {
-       changeURLPhoto.setAttribute('src', '/images/photo-entrante-original.png'); 
+       changeURLPhoto.setAttribute('src', '/images/prueba-fondo.png'); 
     } else if (checkOption2.checked) {
-       changeURLPhoto.setAttribute('src', '/images/photo-tartar-original.png'); 
+       changeURLPhoto.setAttribute('src', '/images/photo-food-blur.png'); 
     } else if (checkOption3.checked) {
         changeURLPhoto.setAttribute('src', '/images/photo-dessert-original.png');
     }   
 })
-
 
 
 
