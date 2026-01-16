@@ -69,9 +69,7 @@
     line-height: 2rem;
        
 }
-.liPhoto {
-    list-style-type: none;
-}
+
 
 .form_container-result li {
     
@@ -123,8 +121,6 @@ input::placeholder {
 /* PANEL */
 .panel {
   width: 80rem;
-  
- 
 }
 
 /* HEADER */
@@ -152,20 +148,6 @@ input::placeholder {
   
 }
 
-/* ARROW */
-.arrow {
-  width: 14px;
-  height: 14px;
-  border-right: 3px solid vars.$color-secondary;
-  border-bottom: 3px solid vars.$color-secondary;
-  transform: rotate(-135deg);
-  
-  transition: transform 0.35s ease;
-}
-
-.panel .open .arrow {
-  transform: rotate(45deg);
-}
 
 
 

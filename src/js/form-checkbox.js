@@ -20,28 +20,5 @@ selectCheckbox.addEventListener("change", (e) => {
 
 
 
-//boton reset
 
-const buttonReset = document.getElementById('button_reset');
-const resetInputValue = document.querySelectorAll('.campo');
-const containerToBlur = document.querySelectorAll('.container-blur');
-
-buttonReset.addEventListener("click", () => {
-    console.log('reset');
-
-    resetInputValue.forEach(input => {
-        input.value = '';
-        
-    });
- });
-
-//abrir flecha
-
-const formCheckbox = document.querySelector(".form-checkbox");
-const headerpageFormCheckbox = document.querySelector(".form-checkbox_titleAndIcon");
-
-headerpageFormCheckbox.addEventListener("click", () => {
-    console.log('holi');
-    pageFormCheckbox.classList.toggle("open");
-});
 

@@ -4,7 +4,7 @@ const inputs = document.querySelectorAll(".campo");
 const parrafo = document.getElementById("form_container-result");
 const form = document.querySelector(".form_container-sign");
 
-
+//VISTA PREVIA DE LOS INPUTS
 inputs.forEach(input => {
 input.addEventListener('input', manejarInput);
 });
@@ -15,17 +15,19 @@ function manejarInput(event) {
   const campoResultado = document.getElementById(input.dataset.id);
   campoResultado.textContent = input.value;
   
-  
-
 }
 //para la imagen
 const inputImage = document.querySelector('input[name="selectImage"]');
 const imgResult = document.getElementById('form_container-result-photo');
-
+const liPhoto = document.querySelector('.liPhoto');
 inputImage.addEventListener('change', function () {
   const file = this.files[0];
   if (file) {
     imgResult.src = URL.createObjectURL(file);
+    liPhoto.classList.add('liPhoto-view'); //para que no se vea el rectangulo
+    photoResult.classList.remove('hidden');
+  } else {
+    liPhoto.classList.add('hidden');
   }
 });
 

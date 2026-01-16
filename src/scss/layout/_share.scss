@@ -40,6 +40,20 @@
   height: 54px;
 }
 
+/* ARROW */
+.arrow {
+  width: 14px;
+  height: 14px;
+  border-right: 3px solid vars.$color-secondary;
+  border-bottom: 3px solid vars.$color-secondary;
+  transform: rotate(-135deg);
+  
+  transition: transform 0.35s ease;
+}
+
+.panel.open .arrow {
+  transform: rotate(45deg);
+}
 
 
 
