@@ -79,7 +79,7 @@ photoInput.addEventListener('change', () => {
 
   reader.onload = () => {
     const savedData = JSON.parse(localStorage.getItem('formData')) || {};
-    savedData.photo = reader.result;
+    savedData.photo = file.name;
 
     localStorage.setItem('formData', JSON.stringify(savedData));
     photoPreview.src = reader.result;
