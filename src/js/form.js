@@ -31,7 +31,8 @@ function paintPreview(data) {
   }
 }
 
-//Cargar Local Storage
+
+//Guardar datos en Local Storage
 
 function loadLocalStorage() {
   const savedData = JSON.parse(localStorage.getItem('formData'));

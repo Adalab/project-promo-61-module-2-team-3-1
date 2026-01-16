@@ -1,0 +1,137 @@
+@use '../core/variables' as vars;
+
+.card-wrapper {
+  display: flex;
+  justify-content: center;
+  padding: 5rem 0;
+}
+
+.card {
+  position: relative;
+  width: 520px;
+  height: 300px;
+  border: 8px solid #e0ff78;
+  overflow: hidden;
+  font-family: vars.$font-secondary;
+}
+
+.card-bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  z-index: 0;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 100%;
+  padding: 0 2rem;
+}
+
+.card-text {
+  width: 56%;
+  margin-left: 4rem;
+  color: black;
+  font-size: 0.95rem;
+  font-weight: 600;
+  text-shadow:
+    -1px -1px 1px rgba(255,255,255,0.8),
+     1px -1px 1px rgba(255,255,255,0.8),
+    -1px  1px 1px rgba(255,255,255,0.8),
+     1px  1px 1px rgba(255,255,255,0.8);
+}
+
+.card-text p {
+  margin: 6px 0;
+}
+
+.card-user-photo {
+  width: 150px;
+  height: 190px;
+  border: none;
+  background: white;
+  overflow: hidden;
+  margin-right: 1.5rem;
+}
+
+.card-user-photo img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+//mobile
+
+@media (max-width: 768px) {
+
+  .card-wrapper {
+    padding: 3rem 1rem;
+  }
+
+  .card {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+  }
+
+  .card-content {
+    flex-direction: column;
+    justify-content: center;
+    padding: 1.5rem;
+  }
+
+  .card-user-photo {
+    width: 140px;
+    height: 180px;
+    margin: 0 0 1.2rem 0;
+  }
+
+  .card-text {
+    width: 100%;
+    margin-left: 0;
+    text-align: center;
+    font-size: 0.95rem;
+  }
+
+  .card-text p {
+    margin: 4px 0;
+  }
+}
+
+
+
+// botón compartir
+
+.card_button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: vars.$color-primary;
+  color: black;
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: vars.$font-secondary;
+  width: 140px;
+  height: 40px;
+  border: 2px solid #000;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: all 0.50s ease;
+}
+
+.card_button:hover {
+  background-color: vars.$color-secondary-dark;
+  color: white;
+  width: 155px;
+  height: 54px;
+}
+
+.share-twitter {
+  margin: 0.25rem auto 0;
+}
